@@ -1,84 +1,168 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Subjects</title>
-    <meta name="description" content="Subject Links">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 40px 20px 20px 20px;
-      }
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Physics Resources – MypDocs</title>
+  <meta name="description" content="MYP5 Physics Resources" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      background-color: #1c1c1c;
+      color: #eeeeee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 40px 20px 20px 20px;
+      line-height: 1.6;
+    }
 
-      .back-button {
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        text-decoration: none;
-        font-size: 18px;
-        color: #007BFF;
-        background-color: transparent;
-        border: none;
-        padding: 8px 12px;
-        border-radius: 5px;
-        transition: background-color 0.2s;
-      }
+    .back-button {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #b191ff;
+      background-color: transparent;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+    }
 
-      .back-button:hover {
-        background-color: rgba(0, 123, 255, 0.1);
-      }
+    .back-button:hover {
+      background-color: rgba(177, 145, 255, 0.1);
+    }
 
-      h1 {
-        margin-top: 60px;
-      }
+    h1, h2, h3 {
+      text-align: center;
+      color: #e0d4ff;
+      text-shadow: 0 0 10px #b191ff;
+      margin-bottom: 30px;
+    }
 
-      h2 {
-        margin-top: 30px;
-        color: #333;
-      }
+    ul {
+      list-style-type: disc;
+      padding-left: 40px;
+    }
 
+    li {
+      margin-bottom: 10px;
+    }
+
+    a.notes-link,
+    a.worksheet-link {
+      text-decoration: none;
+      color: #b191ff;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    a.notes-link:hover,
+    a.worksheet-link:hover {
+      color: #ffffff;
+      text-shadow: 0 0 8px #b191ff;
+    }
+
+    .italic {
+      font-style: italic;
+      color: #ff7070;
+      text-align: center;
+      margin: 20px 0 30px 0;
+      font-weight: bold;
+    }
+
+    .glow-divider {
+      height: 2px;
+      width: 80%;
+      margin: 30px auto;
+      background: linear-gradient(to right, transparent, #b191ff, transparent);
+      border-radius: 4px;
+      box-shadow: 0 0 6px #b191ff;
+    }
+
+    .ea-title {
+      color: red;
+      margin-top: 10px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .important {
+      font-weight: bold;
+      color: #f2caff;
+    }
+
+    ol li {
+      margin-bottom: 12px;
+    }
+
+    ul.sublist {
+      margin-left: 20px;
+      margin-top: 8px;
+      margin-bottom: 15px;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #e0d4ff;
+      font-size: 28px;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 12px #b191ff;
+    }
+
+    .unit-box {
+      background-color: #2a2a2a;
+      border: 1px solid #b191ff;
+      box-shadow: 0 0 10px #b191ff55;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 800px;
+    }
+
+    .unit-box h3 {
+      color: #cfc6ff;
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      text-shadow: 0 0 8px #b191ff88;
+    }
+
+    .unit-box p {
+      margin: 5px 0 10px;
+    }
+
+    .bold {
+      font-weight: bold;
+      color: #f2caff;
+    }
+
+    .tips-container, .resources-container {
+      max-width: 800px;
+      margin: 0 auto 50px;
+      padding: 0 20px;
+    }
+
+    .resources-container ul {
+      padding-left: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
       ul {
-        list-style-type: disc;
-        padding-left: 20px;
+        padding-left: 25px;
       }
+    }
+  </style>
+</head>
+<body>
 
-      li {
-        margin-bottom: 10px;
-      }
+  <a href="../index.html" class="back-button">&#8592; Back</a>
 
-      a.notes-link,
-      a.worksheet-link {
-        text-decoration: none;
-        color: #007BFF;
-      }
-
-      a.notes-link:hover,
-      a.worksheet-link:hover {
-        text-decoration: underline;
-      }
-
-      .ea-title {
-        color: red;
-        margin-top: 40px;
-      }
-
-      .important {
-        font-weight: bold;
-      }
-
-      .italic {
-        font-style: italic;
-      }
-    </style>
-  </head>
-  <body>
-
-    <a href="../index.html" class="back-button">&#8592; Back</a>
-
+  <div class="resources-container">
     <h1>Physics Resources</h1>
+
     <ul>
       <li><a class="notes-link" href="notes/Physicsbook.html">Physics book w all notes</a></li>
       <li><a class="notes-link" href="notes/Physicsnotes1.html">More notes from ibdocs i think</a></li>
@@ -89,33 +173,39 @@
     </ul>
 
     <p class="italic">The combined notes are probably the best option and they include basically everything you would ever need to get a 7 in physics.</p>
+  </div>
 
-    <h1>Practice Questions</h1>
+  <div class="glow-divider"></div>
 
-    <h2>🔍 Unit 1: Travelling Through Space and Time</h2>
-    <ul>
-      <li><a class="worksheet-link" href="worksheets/Unit 1 physics worksheets.html">All unit 1 worksheets</a></li>
-      <li><strong>Topics:</strong> Motion graphs, Newton’s Laws, SUVAT equations, forces, work, energy, power, momentum, equations of motion.</li>
-    </ul>
+  <h1 class="section-title">📘 Practice Questions</h1>
 
-    <h2>🔊 Unit 2: Get on the Wave</h2>
-    <ul>
-      <li><a class="worksheet-link" href="worksheets/Unit 2 physics worksheets.html">All unit 2 worksheets</a></li>
-      <li><strong>Topics:</strong> Transverse and longitudinal waves, reflection, refraction, TIR, lenses, sound waves, wave properties.</li>
-    </ul>
+  <div class="unit-box">
+    <h3>🔍 Unit 1: Travelling Through Space and Time</h3>
+    <p><a class="worksheet-link" href="worksheets/Unit 1 physics worksheets.html">📄 All unit 1 worksheets</a></p>
+    <p><span class="bold">Topics:</span> Motion graphs, Newton’s Laws, SUVAT equations, forces, work, energy, power, momentum, equations of motion.</p>
+  </div>
 
-    <h2>⚡ Unit 3: Electricity and Magnetism</h2>
-    <ul>
-      <li><a class="worksheet-link" href="worksheets/Unit 3 physics worksheets.html">All unit 3 worksheets</a></li>
-      <li><strong>Topics:</strong> Electric circuits, resistance, Ohm’s Law, resistivity, transformers, electromagnetic effects.</li>
-    </ul>
+  <div class="unit-box">
+    <h3>🔊 Unit 2: Get on the Wave</h3>
+    <p><a class="worksheet-link" href="worksheets/Unit 2 physics worksheets.html">📄 All unit 2 worksheets</a></p>
+    <p><span class="bold">Topics:</span> Transverse and longitudinal waves, reflection, refraction, TIR, lenses, sound waves, wave properties.</p>
+  </div>
 
-    <h2>🚀 Unit 4: Energy and Nuclear Physics</h2>
-    <ul>
-      <li><a class="worksheet-link" href="worksheets/Unit 4 physics worksheets.html">All unit 4 worksheets</a></li>
-      <li><strong>Topics:</strong> Specific heat capacity, nuclear decay, types of radiation, fission and fusion, nuclear models and reactions.</li>
-    </ul>
+  <div class="unit-box">
+    <h3>⚡ Unit 3: Electricity and Magnetism</h3>
+    <p><a class="worksheet-link" href="worksheets/Unit 3 physics worksheets.html">📄 All unit 3 worksheets</a></p>
+    <p><span class="bold">Topics:</span> Electric circuits, resistance, Ohm’s Law, resistivity, transformers, electromagnetic effects.</p>
+  </div>
 
+  <div class="unit-box">
+    <h3>🚀 Unit 4: Energy and Nuclear Physics</h3>
+    <p><a class="worksheet-link" href="worksheets/Unit 4 physics worksheets.html">📄 All unit 4 worksheets</a></p>
+    <p><span class="bold">Topics:</span> Specific heat capacity, nuclear decay, types of radiation, fission and fusion, nuclear models and reactions.</p>
+  </div>
+
+  <div class="glow-divider"></div>
+
+  <div class="tips-container">
     <h1 class="ea-title">Tips for eAssessment:</h1>
     <ol>
       <li>For all <span class="important">numerical questions</span>, write the correct formula, substitute values, and show your calculation step-by-step.</li>
@@ -135,7 +225,7 @@
       <li>If systematic errors are mentioned, describe how to <span class="important">correct readings</span>, not avoid them (e.g., subtract background radiation).</li>
       <li><span class="important">State the cause and effect</span> clearly in your advantages/limitations—don’t just list them.</li>
       <li><span class="important">Safety Precautions</span> depend on the experiment:</li>
-      <ul style="margin-top: 8px; margin-bottom: 15px;">
+      <ul class="sublist">
         <li>Use of goggles when handling acids or bases.</li>
         <li>Use of gloves when handling hot apparatus or chemicals.</li>
         <li>Keep electronics away from liquids.</li>
@@ -143,7 +233,7 @@
         <li>Keep flammable materials away from open flames.</li>
       </ul>
     </ol>
+  </div>
 
-    <script src="" async defer></script>
-  </body>
+</body>
 </html>

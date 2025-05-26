@@ -1,41 +1,207 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Subjects</title>
-    <meta name="description" content="Subject Links">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>MypDocs</title>
+  <meta name="description" content="Subject Links">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-color: #1c1c1c;
+      color: #eeeeee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 40px 0;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    .vertical-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, transparent, #b191ff, transparent);
+      box-shadow: 0 0 8px #b191ff88;
+      z-index: 0;
+    }
+
+    .line-left {
+      left: calc(50% - 340px);
+    }
+
+    .line-right {
+      right: calc(50% - 340px);
+    }
+
+    .main-content {
+      width: 600px;
+      z-index: 1;
+      padding: 0 20px;
+    }
+
+    .side-content {
+      width: 260px;
+      padding: 0 20px;
+      z-index: 0;
+    }
+
+    .side-content h2 {
+      text-align: center;
+      color: #e0d4ff;
+      text-shadow: 0 0 10px #b191ff;
+      margin-top: 0;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #e0d4ff;
+      text-shadow: 0 0 10px #b191ff;
+      margin-bottom: 30px;
+    }
+
+    p, ul, li, a {
+      font-size: 16px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 40px;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    a {
+      color: #b191ff;
+      text-decoration: none;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 8px #b191ff;
+    }
+
+    .italics {
+      color: #ff7070;
+      font-weight: bold;
+      font-style: italic;
+      margin-top: 30px;
+      display: block;
+      text-align: center;
+    }
+
+    .glow-divider {
+      height: 2px;
+      width: 100%;
+      margin: 30px auto;
+      background: linear-gradient(to right, transparent, #b191ff, transparent);
+      border-radius: 4px;
+      box-shadow: 0 0 6px #b191ff;
+    }
+
+    .note {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 30px;
+      color: #aaaaaa;
+    }
+
+    .layout-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      gap: 20px;
+    }
+
+    @media screen and (max-width: 1000px) {
       body {
-        font-family: Arial, sans-serif;
-        padding: 20px;
+        flex-direction: column;
+        align-items: center;
       }
-      ul {
-        list-style-type: disc;
-        padding-left: 20px;
+
+      .layout-wrapper {
+        flex-direction: column;
+        align-items: center;
       }
-      li {
-        margin-bottom: 10px;
+
+      .vertical-line {
+        display: none;
       }
-      a {
-        text-decoration: none;
-        color: #007BFF;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Subjects</h1>
-    <ul>
-      <li><a href="Physics/physics.html">Physics</a></li>
-      <li><a href="Chemistry/chemistry.html">Chemistry</a></li>
-      <li><a href="Maths/maths.html">Maths</a></li>
-      <li><a href="Biology/biology.html">Biology</a></li>
-    </ul>
-    <a href="CritBCchecklist.html">Criteria BC checklist and sm other random stuff idk what I was doing but it might be helpful</a>
-    <script src="" async defer></script>
-  </body>
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Glowing vertical lines framing the main content -->
+  <div class="vertical-line line-left"></div>
+  <div class="vertical-line line-right"></div>
+
+  <div class="layout-wrapper">
+
+    <!-- Left: Tips -->
+    <div class="side-content">
+      <div class="glow-divider"></div>
+      <h2>Tips</h2>
+      <ul>
+        <li><strong>Practice Past Papers:</strong> Regularly solve past papers to familiarize yourself with the exam format and question types.</li>
+        <li><strong>Understand Command Terms:</strong> Learn and understand IB command terms like "analyze," "evaluate," and "compare" to answer questions accurately.</li>
+        <li><strong>Time Management:</strong> Allocate specific time slots for each subject and stick to your study schedule.</li>
+        <li><strong>Seek Feedback:</strong> After completing practice questions, seek feedback from teachers or peers to identify areas of improvement.</li>
+        <li><strong>Stay Organized:</strong> Keep your notes and study materials well-organized for efficient revision.</li>
+      </ul>
+      <div class="glow-divider"></div>
+    </div>
+
+    <!-- Center: Main Content -->
+    <div class="main-content">
+      <h1>MypDocs</h1>
+      <p class="note">If something is in purple, it means you can click on it.</p>
+
+      <div class="glow-divider"></div>
+
+      <h2>Subjects</h2>
+      <ul>
+        <li><a href="Physics/physics.html">Physics 🚀</a></li>
+        <li><a href="Chemistry/chemistry.html">Chemistry 😭</a></li>
+        <li><a href="Maths/maths.html">Maths 💤😴</a></li>
+        <li><a href="Biology/biology.html">Biology 🦠🦠</a></li>
+      </ul>
+
+      <p class="italics">
+        If you don't see anything once you open a section or file, wait for 5 seconds or try scrolling down.<br><br>
+        If one of the worksheets contains something random or irrelevant, just skip it. <br>
+        I'm not taking the time to sort through all the files—do it yourself.
+      </p>
+
+      <div class="glow-divider"></div>
+
+      <h2>General Resources</h2>
+      <p style="text-align: center;">
+        <a href="CritBCchecklist.html">Criteria BC checklist and some other random stuff — might be useful</a>
+      </p>
+    </div>
+
+    <!-- Right: Questions -->
+    <div class="side-content">
+      <div class="glow-divider"></div>
+      <h2>Questions & Thoughts</h2>
+      <ul>
+        <li><strong>How can I improve my math grades in MYP5?</strong> Consider seeking additional help, such as tutoring, and practice applying concepts to real-world problems.</li>
+        <li><strong>What strategies can help me manage time effectively during exams?</strong> Practice timed assessments and develop a study schedule to enhance time management skills.</li>
+        <li><strong>How do I choose a suitable topic for my Personal Project?</strong> Reflect on your interests and select a topic that you are passionate about and can explore in depth.</li>
+        <li><strong>What resources are available for MYP5 revision?</strong> Utilize past papers, revision guides, and online platforms like IB Docs and Cognito for comprehensive study materials.</li>
+        <li><strong>How can I stay motivated throughout the MYP5 year?</strong> Set achievable goals, reward yourself for milestones, and maintain a balanced study routine to stay motivated.</li>
+      </ul>
+      <div class="glow-divider"></div>
+    </div>
+    
+  </div>
+</body>
 </html>
