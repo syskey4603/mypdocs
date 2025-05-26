@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Chemistry Resources</title>
-  <meta name="description" content="Chemistry Subject Links">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chemistry Resources – MypDocs</title>
+  <meta name="description" content="MYP5 Chemistry Resources" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
       background-color: #1c1c1c;
       color: #eeeeee;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 40px 20px;
+      padding: 40px 20px 20px 20px;
       line-height: 1.6;
     }
 
-    h1, h2 {
+    .back-button {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #b191ff;
+      background-color: transparent;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+    }
+
+    .back-button:hover {
+      background-color: rgba(177, 145, 255, 0.1);
+    }
+
+    h1, h2, h3 {
       text-align: center;
       color: #e0d4ff;
       text-shadow: 0 0 10px #b191ff;
       margin-bottom: 30px;
-    }
-
-    p, ul, li, a {
-      font-size: 16px;
     }
 
     ul {
@@ -33,27 +47,28 @@
     }
 
     li {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
-    a {
-      color: #b191ff;
+    a.notes-link,
+    a.worksheet-link {
       text-decoration: none;
+      color: #b191ff;
       transition: color 0.3s ease, text-shadow 0.3s ease;
     }
 
-    a:hover {
+    a.notes-link:hover,
+    a.worksheet-link:hover {
       color: #ffffff;
       text-shadow: 0 0 8px #b191ff;
     }
 
     .italic {
-      color: #ff7070;
-      font-weight: bold;
       font-style: italic;
-      margin-top: 30px;
-      display: block;
+      color: #ff7070;
       text-align: center;
+      margin: 20px 0 30px 0;
+      font-weight: bold;
     }
 
     .glow-divider {
@@ -65,144 +80,159 @@
       box-shadow: 0 0 6px #b191ff;
     }
 
-    .container {
-      max-width: 600px;
-      margin: auto;
-    }
-
-    .note {
+    .ea-title {
+      color: red;
+      margin-top: 10px;
       text-align: center;
-      font-size: 14px;
-      margin-bottom: 30px;
-      color: #aaaaaa;
+      font-size: 24px;
     }
 
-    .side-section {
-      position: fixed;
-      top: 100px;
-      width: 200px;
-      padding: 20px;
-      background-color: #2a2a2a;
-      border: 2px solid #b191ff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #b191ff;
+    .important {
+      font-weight: bold;
+      color: #f2caff;
     }
 
-    .left-section {
-      left: 20px;
+    ol li {
+      margin-bottom: 12px;
     }
 
-    .right-section {
-      right: 20px;
-    }
-
-    .side-section h2 {
-      color: #e0d4ff;
-      text-align: center;
+    ul.sublist {
+      margin-left: 20px;
+      margin-top: 8px;
       margin-bottom: 15px;
     }
 
-    .side-section ul {
-      list-style-type: disc;
+    .section-title {
+      text-align: center;
+      color: #e0d4ff;
+      font-size: 28px;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 12px #b191ff;
+    }
+
+    .unit-box {
+      background-color: #2a2a2a;
+      border: 1px solid #b191ff;
+      box-shadow: 0 0 10px #b191ff55;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 800px;
+    }
+
+    .unit-box h3 {
+      color: #cfc6ff;
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      text-shadow: 0 0 8px #b191ff88;
+    }
+
+    .unit-box p {
+      margin: 5px 0 10px;
+    }
+
+    .bold {
+      font-weight: bold;
+      color: #f2caff;
+    }
+
+    .tips-container, .resources-container {
+      max-width: 800px;
+      margin: 0 auto 50px;
+      padding: 0 20px;
+    }
+
+    .resources-container ul {
       padding-left: 20px;
     }
 
-    .side-section li {
-      margin-bottom: 10px;
-    }
-
-    @media (max-width: 1000px) {
-      .side-section {
-        position: static;
-        width: auto;
-        margin: 20px 0;
+    @media screen and (max-width: 768px) {
+      ul {
+        padding-left: 25px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="side-section left-section">
-    <h2>Tips</h2>
-    <ul>
-      <li>Break up chemistry into manageable parts.</li>
-      <li>Utilize flashcards for memorization.</li>
-      <li>Practice problems regularly.</li>
-      <li>Use visual aids to understand concepts.</li>
-      <li>Teach others to reinforce your understanding.</li>
-      <li>Focus on understanding over memorization.</li>
-      <li>Review and study material before classes.</li>
-      <li>Take advantage of lab time for hands-on learning.</li>
-      <li>Use study groups for collaborative learning.</li>
-    </ul>
-  </div>
 
-  <div class="side-section right-section">
-    <h2>Questions & Thoughts</h2>
-    <ul>
-      <li>What are the most common topics in MYP5 Chemistry e-assessments?</li>
-      <li>How to effectively prepare for MYP5 Chemistry exams?</li>
-      <li>Where can I find past papers for MYP5 Chemistry?</li>
-      <li>What are some effective study strategies for Chemistry?</li>
-      <li>How to balance practical and theoretical Chemistry studies?</li>
-    </ul>
-  </div>
+  <a href="../index.html" class="back-button">&#8592; Back</a>
 
-  <div class="container">
+  <div class="resources-container">
     <h1>Chemistry Resources</h1>
-    <p class="note">If something is in purple, it means you can click on it.</p>
 
-    <div class="glow-divider"></div>
-
-    <h2>Subjects</h2>
     <ul>
-      <li><a href="Chemistry/chemistry.html">Chemistry</a></li>
-      <li><a href="Physics/physics.html">Physics</a></li>
-      <li><a href="Maths/maths.html">Maths</a></li>
-      <li><a href="Biology/biology.html">Biology</a></li>
+      <li><a class="notes-link" href="notes/chemnotes1.html">Some notes no idea whos</a></li>
+      <li><a class="notes-link" href="notes/chemnotes2.html">More notes go study or sm</a></li>
+      <li><a class="notes-link" href="notes/chemnotes3.html">More notes worst subject fr</a></li>
+      <li><a class="notes-link" href="notes/chemnotes4.html">how many notes???!!!</a></li>
+      <li><a class="notes-link" href="notes/Chemistry thing.html">Combined notes dont click the back button in this file</a></li>
     </ul>
 
-    <p class="italic">
-      If you don't see anything once you open a section or file, wait for 5 seconds or try scrolling down.<br><br>
-      If one of the worksheets contains something random or irrelevant, just skip it. <br>
-      I'm not taking the time to sort through all the files—do it yourself.
-    </p>
-
-    <div class="glow-divider"></div>
-
-    <h2>General Resources</h2>
-    <p style="text-align: center;">
-      <a href="CritBCchecklist.html">Criteria BC checklist and some other random stuff — might be useful</a>
-    </p>
-
-    <div class="glow-divider"></div>
-
-    <h2>Practice Questions</h2>
-
-    <h3>🧪 Unit 1: Know Your Elementum</h3>
-    <ul>
-      <li><a href="worksheets/Unit1_Chemistry.html">All Unit 1 Worksheets</a></li>
-      <li><strong>Topics:</strong> Periodic Trends, Applications of Noble Gases, States of Matter, Atomic Structure, Separation Techniques.</li>
-    </ul>
-
-    <h3>⚛️ Unit 2: Structure and Power of Bonding</h3>
-    <ul>
-      <li><a href="worksheets/Unit2_Chemistry.html">All Unit 2 Worksheets</a></li>
-      <li><strong>Topics:</strong> Chemical Bonds, IUPAC Nomenclature, Balancing Equations, Metals and Reactivity.</li>
-    </ul>
-
-    <h3>🧪 Unit 3: Action Triggers Reaction</h3>
-    <ul>
-      <li><a href="worksheets/Unit3_Chemistry.html">All Unit 3 Worksheets</a></li>
-      <li><strong>Topics:</strong> Mole Concept, Acids and Bases, Energy Changes, Redox Reactions, Kinetics, Equilibrium, Industrial Applications.</li>
-    </ul>
-
-    <h3>🌱 Unit 4: Sustainable Activities - Care for Your World</h3>
-    <ul>
-      <li><a href="worksheets/Unit4_Chemistry.html">All Unit 4 Worksheets</a></li>
-      <li><strong>Topics:</strong> Air Composition, Greenhouse Effects, Water Pollution, Green Chemistry Principles.</li>
-    </ul>
+    <p class="italic">The combined notes are probably the best option and they include basically everything you would ever need to get a 7 in chemistry.</p>
   </div>
 
-  <script src="" async defer></script>
+  <div class="glow-divider"></div>
+
+  <h1 class="section-title">📘 Practice Questions</h1>
+
+  <div class="unit-box">
+    <h3>🔪 Unit 1: Know Your Elementum</h3>
+    <p><a class="worksheet-link" href="worksheets/Unit 1 chemistry worksheets.html">📄 All unit 1 worksheets</a></p>
+    <p><span class="bold">Topics:</span> Periodic trends, noble gases, heating/cooling curves, diffusion, isotopes, mixtures, separation techniques.</p>
+  </div>
+
+  <div class="unit-box">
+    <h3>⚛️ Unit 2: Structure and Power of Bonding</h3>
+    <p><a class="worksheet-link" href="worksheets/Unit 2 chemistry worksheets.html">📄 All unit 2 worksheets</a></p>
+    <p><span class="bold">Topics:</span> Bond types, hydrocarbons, IUPAC names, balancing equations, reactivity of metals, corrosion, extraction.</p>
+  </div>
+
+  <div class="unit-box">
+    <h3>🧪 Unit 3: Action Triggers Reaction</h3>
+    <p><a class="worksheet-link" href="worksheets/Unit 3 chemistry worksheets.html">📄 All unit 3 worksheets</a></p>
+    <p><span class="bold">Topics:</span> Mole concept, acid/base theories, energy changes, redox, rates, equilibrium, industrial processes.</p>
+  </div>
+
+  <div class="unit-box">
+    <h3>🌱 Unit 4: Sustainable Activities</h3>
+    <p><a class="worksheet-link" href="worksheets/Unit 4 chemistry worksheets.html">📄 All unit 4 worksheets</a></p>
+    <p><span class="bold">Topics:</span> Composition of air and water, pollution, greenhouse gases, treatment techniques, green chemistry.</p>
+  </div>
+
+  <div class="glow-divider"></div>
+
+  <div class="tips-container">
+    <h1 class="ea-title">Tips for eAssessment:</h1>
+    <ol>
+      <li>For all <span class="important">numerical questions</span>, write the correct formula, substitute values, and show your calculation step-by-step.</li>
+      <li><span class="important">Always round off</span> your final answer to match the least precise value used in your calculation.</li>
+      <li><span class="important">Precision rule:</span> The final value cannot be more precise than the least precise measurement used in the calculation.</li>
+      <li>Final answers should have the <span class="important">correct number of significant figures</span> and proper units.</li>
+      <li>Use <span class="important">specific scientific vocabulary</span>. Avoid vague terms like “over there.”</li>
+      <li><span class="important">Hypothesis</span> should clearly state the independent and dependent variables.</li>
+      <li>Include a <span class="important">brief scientific explanation</span> for the hypothesis even if not asked.</li>
+      <li>Always explain how you will <span class="important">manipulate the IV</span>, <span class="important">measure the DV</span>, and <span class="important">control the CVs</span>.</li>
+      <li>If the question says design a <span class="important">safe method</span>, include specific <span class="important">safety precautions</span>.</li>
+      <li>If only “precaution” is mentioned, explain how you will ensure reliability by doing <span class="important">3 trials</span> and state what kind of errors you're minimizing (e.g., parallax, timing errors).</li>
+      <li><span class="important">Define the range and increments</span> of the independent variable to ensure enough data is collected.</li>
+      <li>Units should be written once in the <span class="important">column headers</span> of data tables—not next to each value.</li>
+      <li><span class="important">Explain the need for repeated trials</span> to improve the reliability of results.</li>
+      <li>Know that a <span class="important">direct relationship</span> means a constant ratio and a graph passing through the origin—not just a straight line.</li>
+      <li>If systematic errors are mentioned, describe how to <span class="important">correct readings</span>, not avoid them (e.g., subtract background radiation).</li>
+      <li><span class="important">State the cause and effect</span> clearly in your advantages/limitations—don’t just list them.</li>
+      <li><span class="important">Safety Precautions</span> depend on the experiment:</li>
+      <ul class="sublist">
+        <li>Use of goggles when handling acids or bases.</li>
+        <li>Use of gloves when handling hot apparatus or chemicals.</li>
+        <li>Keep electronics away from liquids.</li>
+        <li>Use a fume hood when heating volatile substances.</li>
+        <li>Keep flammable materials away from open flames.</li>
+      </ul>
+    </ol>
+  </div>
+
 </body>
 </html>
