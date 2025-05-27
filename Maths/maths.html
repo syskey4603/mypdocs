@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Maths – MypDocs</title>
+  <meta name="description" content="MYP5 Mathematics Resources">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-color: #1c1c1c;
+      color: #eeeeee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 40px 0;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+    .back-button {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #b191ff;
+      background-color: transparent;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+    }
+
+    .back-button:hover {
+      background-color: rgba(177, 145, 255, 0.1);
+    }
+    .vertical-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, transparent, #b191ff, transparent);
+      box-shadow: 0 0 8px #b191ff88;
+      z-index: 0;
+    }
+
+    .line-left {
+      left: calc(50% - 340px);
+    }
+
+    .line-right {
+      right: calc(50% - 340px);
+    }
+
+    .main-content {
+      width: 600px;
+      z-index: 1;
+      padding: 0 20px;
+    }
+
+    .side-content {
+      width: 260px;
+      padding: 0 20px;
+      z-index: 0;
+    }
+
+    .side-content h2 {
+      text-align: center;
+      color: #e0d4ff;
+      text-shadow: 0 0 10px #b191ff;
+      margin-top: 0;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #e0d4ff;
+      text-shadow: 0 0 10px #b191ff;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #b191ff;
+      text-decoration: none;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 8px #b191ff;
+    }
+
+    .italic {
+      font-style: italic;
+      color: #ff7070;
+      text-align: center;
+      margin: 20px 0 30px 0;
+      font-weight: bold;
+    }
+
+    .glow-divider {
+      height: 2px;
+      width: 100%;
+      margin: 30px auto;
+      background: linear-gradient(to right, transparent, #b191ff, transparent);
+      border-radius: 4px;
+      box-shadow: 0 0 6px #b191ff;
+    }
+
+    .layout-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      gap: 20px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      body {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .layout-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .vertical-line {
+        display: none;
+      }
+    }
+  </style>
+    <a href="../index.html" class="back-button">&#8592; Back</a>
+</head>
+<body>
+  <div class="vertical-line line-left"></div>
+  <div class="vertical-line line-right"></div>
+  <div class="layout-wrapper">
+    <div class="side-content">
+      <div class="glow-divider"></div>
+      <h2>Questionbanks</h2>
+      <ul>
+        <li><a href="questionbanks/qb1.html">Questionbank 1</a></li>
+        <li><a href="questionbanks/qb2.html">Questionbank 2</a></li>
+        <li><a href="questionbanks/qb3.html">Questionbank 3</a></li>
+      </ul>
+      <div class="glow-divider"></div>
+    </div>
+
+    <div class="main-content">
+      <h1>Mathematics Resources</h1>
+      <div class="glow-divider"></div>
+
+      <h2>🧠 Guide for MYP5 Math eAssessment</h2>
+      <ul>
+        <li>Functions (Always 1–2 questions)</li>
+        <li>Trigonometry (1 question, often real-life angle context)</li>
+        <li>Probability/Statistics (1–2 questions)</li>
+        <li>Patterns and Sequences (usually 25–30 marks overall)</li>
+      </ul>
+      <h3>📝 Criterion Breakdown</h3>
+      <ul>
+        <li><strong>Criterion A:</strong> Recall of facts, properties, and methods. Expect clear definitions, formulas, and units. (8–10 marks)</li>
+        <li><strong>Criterion B:</strong> Pattern recognition using tables, functions and rules. Longest section. (25–30 marks)</li>
+        <li><strong>Criterion C:</strong> Clear, logical steps with correct notation and diagram labeling.</li>
+        <li><strong>Criterion D:</strong> Application of math in real contexts with justifications and relevant factors like cost, units, scale. (15–25 marks)</li>
+      </ul>
+      <h3>🎯 Extended vs Standard</h3>
+      <ul>
+        <li><span style="color:#ff7070;">Extended:</span> logs, binomial expansion, trig graph transformations, vectors, 3D geometry, rational expressions, exponential functions, conditional probability</li>
+        <li>Standard: quadratic, linear, basic trig</li>
+        <li>Both require understanding of notation, graphs, geometry, and data handling</li>
+      </ul>
+
+      <div class="glow-divider"></div>
+
+      <h2>📘 MYP5 Math Syllabus</h2>
+      <ul>
+        <li><strong>Number & Operations:</strong> absolute values, inequalities, surds, sets & Venn diagrams</li>
+        <li><strong>Algebra:</strong> sequences, functions, equations, variations, factorizations</li>
+        <li><strong>Graphs:</strong> linear/quadratic, domain/range, transformations</li>
+        <li><strong>Geometry & Trig:</strong> pythagoras, volume, similarity, basic trig</li>
+        <li><strong>Statistics & Probability:</strong> frequency tables, graphs, Venn diagrams, tree diagrams</li>
+        <li style="color:#ff7070;"><strong>Extended Only:</strong> logs, exponential, binomial, vectors, 3D, sine/cosine laws, trig graphs, conditional probability</li>
+      </ul>
+      <p class="italic">📄 <a href="theoryguide.html">Full content guide</a></p>
+    </div>
+
+    <div class="side-content">
+      <div class="glow-divider"></div>
+      <h2>Past Papers</h2>
+      <ul>
+        <li><a href="past papers/standard papers.html">Standard Papers</a></li>
+        <li><a href="past papers/extended papers.html">Extended Papers</a></li>
+        <li><a href="past papers/standard markschemes.html">Standard Markschemes</a></li>
+        <li><a href="past papers/extended markschemes.html">Extended Markschemes</a></li>
+      </ul>
+      <div class="glow-divider"></div>
+    </div>
+  </div>
+</body>
+</html>
