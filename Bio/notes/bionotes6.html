@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MypDocs Physics worksheets</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: sans-serif;
+      background: #f0f0f0;
+    }
+    #pdf-container {
+      height: 100vh;
+      width: 100vw;
+      overflow-y: scroll;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+    canvas {
+      display: block;
+      margin: 0 auto 20px auto;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="pdf-container"></div>
+
+  <script type="module">
+    import * as pdfjsLib from 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.min.mjs';
+
+    // Set worker
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.worker.min.mjs';
+
+    const url = 'bionotes6.pdf'; // Make sure Physics.pdf is in the same folder
+
+    const container = document.getElementById('pdf-container');
+
+    const renderAllPages = async () => {
+      const pdf = await pdfjsLib.getDocument(url).promise;
+      for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+        const page = await pdf.getPage(pageNum);
+        const viewport = page.getViewport({ scale: 1.5 });
+
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        await page.render({
+          canvasContext: context,
+          viewport: viewport
+        }).promise;
+
+        container.appendChild(canvas);
+      }
+    };
+
+    renderAllPages();
+
+    // Disable right-click and shortcuts
+    document.addEventListener("contextmenu", e => e.preventDefault());
+    document.addEventListener("keydown", e => {
+      if ((e.ctrlKey || e.metaKey) && ['s', 'p', 'u'].includes(e.key.toLowerCase())) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
