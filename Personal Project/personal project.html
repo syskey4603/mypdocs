@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Personal Project – MypDocs</title>
+  <meta name="description" content="MYP5 Personal Project Resources">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-color: #1c1c1c;
+      color: #eeeeee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 40px 0;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+    .back-button {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #b191ff;
+      background-color: transparent;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+    }
+    .back-button:hover {
+      background-color: rgba(177, 145, 255, 0.1);
+    }
+    .vertical-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, transparent, #b191ff, transparent);
+      box-shadow: 0 0 8px #b191ff88;
+      z-index: 0;
+    }
+    .line-left {
+      left: calc(50% - 340px);
+    }
+    .line-right {
+      right: calc(50% - 340px);
+    }
+    .main-content {
+      width: 600px;
+      z-index: 1;
+      padding: 0 20px;
+    }
+    .side-content {
+      width: 260px;
+      padding: 0 20px;
+      z-index: 0;
+    }
+    .side-content h2 {
+      text-align: center;
+      color: #e0d4ff;
+      text-shadow: 0 0 10px #b191ff;
+      margin-top: 0;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #e0d4ff;
+      text-shadow: 0 0 10px #b191ff;
+      margin-bottom: 30px;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    a {
+      color: #b191ff;
+      text-decoration: none;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+    a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 8px #b191ff;
+    }
+    .italic {
+      font-style: italic;
+      color: #ff7070;
+      text-align: center;
+      margin: 20px 0 30px 0;
+      font-weight: bold;
+    }
+    .glow-divider {
+      height: 2px;
+      width: 100%;
+      margin: 30px auto;
+      background: linear-gradient(to right, transparent, #b191ff, transparent);
+      border-radius: 4px;
+      box-shadow: 0 0 6px #b191ff;
+    }
+    .layout-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      gap: 20px;
+    }
+    @media screen and (max-width: 1000px) {
+      body {
+        flex-direction: column;
+        align-items: center;
+      }
+      .layout-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+      .vertical-line {
+        display: none;
+      }
+    }
+  </style>
+  <a href="../index.html" class="back-button">&#8592; Back</a>
+</head>
+<body>
+  <div class="vertical-line line-left"></div>
+  <div class="vertical-line line-right"></div>
+  <div class="layout-wrapper">
+    <div class="side-content">
+      <div class="glow-divider"></div>
+      <h2>📄 Exemplars</h2>
+      <ul>
+        <li><a href="exemplars/report 1.html">Chinese Embroidery</a></li>
+        <li><a href="exemplars/report 2.html">DRC Air Pollution Awareness</a></li>
+        <li><a href="exemplars/report 3.html">Plastic Bag Ban Campaign</a></li>
+        <li><a href="exemplars/report 4.html">Gender Inequality in Music</a></li>
+        <li><a href="exemplars/report 5.html">History of Japanese Comics</a></li>
+        <li><a href="exemplars/report 6.html">Climate Change in Greenland</a></li>
+        <li><a href="exemplars/report 7.html">Sustainable Architecture Models</a></li>
+        <li><a href="exemplars/report 8.html">Social Media & Teen Health</a></li>
+      </ul>
+      <div class="glow-divider"></div>
+    </div>
+
+    <div class="main-content">
+      <h1>Personal Project Hub</h1>
+      <div class="glow-divider"></div>
+
+      <h2>🧠 Tips for Success</h2>
+      <ul>
+        <li>Choose a topic that you're <em>genuinely passionate</em> about.</li>
+        <li>Keep regular reflection logs and update ManageBac on time.</li>
+        <li>Consult your supervisor at least once every month.</li>
+        <li>Focus on <strong>both</strong> learning goal and product goal — balance matters.</li>
+        <li>Have measurable success criteria. Don’t be vague.</li>
+        <li>Use the Global Context meaningfully — connect it to your background or passions.</li>
+      </ul>
+
+      <p class="italic">Remember: your project is your story. Make it count.</p>
+
+      <div class="glow-divider"></div>
+
+      <h2>📚 General Resources</h2>
+      <ul>
+        <li><a href="https://www.ibo.org/programmes/middle-years-programme/assessment/personal-project/">Official IB PP Guide</a></li>
+        <li><a href="https://ibpublishing.ibo.org/server2/rest/app/tsm.xql?doc=m_5_mypxx_ass_2007_1_e&part=2&chapter=1">MYP Project Assessment Criteria</a></li>
+        <li><a href="https://drive.google.com/file/d/1RrH98YMnGeMaO7CWXUMX0cqlKP2UgPdh/view">PP Reflection Samples</a></li>
+        <li><a href="https://mypresources.com/personal-project/checklists">Checklist and Timeline Planner</a></li>
+      </ul>
+    </div>
+
+    <div class="side-content">
+      <div class="glow-divider"></div>
+      <h2>Quick Access</h2>
+      <ul>
+        <li><a href="../maths/index.html">MYP5 Maths</a></li>
+        <li><a href="../sciences/index.html">Sciences</a></li>
+        <li><a href="../language/index.html">Lang & Lit</a></li>
+        <li><a href="../index.html">Back to Home</a></li>
+      </ul>
+      <div class="glow-divider"></div>
+    </div>
+  </div>
+</body>
+</html>
