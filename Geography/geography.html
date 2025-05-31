@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geography Resources – MypDocs</title>
+  <meta name="description" content="MYP5 Geography Resources">
+  <style>
+    body {
+      background-color: #1c1c1c;
+      color: #eeeeee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 40px 0;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #b191ff;
+      background-color: transparent;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+    }
+
+    .back-button:hover {
+      background-color: rgba(177, 145, 255, 0.1);
+    }
+
+    .vertical-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, transparent, #b191ff, transparent);
+      box-shadow: 0 0 8px #b191ff88;
+      z-index: 0;
+    }
+
+    .line-left {
+      left: calc(50% - 340px);
+    }
+
+    .line-right {
+      right: calc(50% - 340px);
+    }
+
+    .main-content {
+      width: 600px;
+      z-index: 1;
+      padding: 0 20px;
+    }
+
+    .side-content {
+      width: 260px;
+      padding: 0 20px;
+      z-index: 0;
+    }
+
+    .side-content h2 {
+      text-align: center;
+      color: #e0d4ff;
+      text-shadow: 0 0 10px #b191ff;
+      margin-top: 0;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #e0d4ff;
+      text-shadow: 0 0 10px #b191ff;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #b191ff;
+      text-decoration: none;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 8px #b191ff;
+    }
+
+    .italic {
+      font-style: italic;
+      color: #ff7070;
+      text-align: center;
+      margin: 20px 0 30px 0;
+      font-weight: bold;
+    }
+
+    .glow-divider {
+      height: 2px;
+      width: 100%;
+      margin: 30px auto;
+      background: linear-gradient(to right, transparent, #b191ff, transparent);
+      border-radius: 4px;
+      box-shadow: 0 0 6px #b191ff;
+    }
+
+    .layout-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      gap: 20px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      body {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .layout-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .vertical-line {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="../index.html" class="back-button">← Back</a>
+  <div class="vertical-line line-left"></div>
+  <div class="vertical-line line-right"></div>
+
+  <div class="layout-wrapper">
+
+    <!-- Left Column: Tips -->
+    <div class="side-content">
+      <div class="glow-divider"></div>
+      <h2>Tips</h2>
+      <ul>
+        <li><strong>Understand Concepts:</strong> Focus on causality, sustainability, and spatial interactions.</li>
+        <li><strong>Case Studies:</strong> Use real-world examples with specific dates, figures, and evaluation.</li>
+        <li><strong>Command Terms:</strong> Always break down what is being asked: describe, evaluate, compare, etc.</li>
+        <li><strong>Structure:</strong> Write paragraphs with clear points, supporting evidence, and mini conclusions.</li>
+        <li><strong>Maps & Data:</strong> Use GIS, diagrams, and maps effectively when provided.</li>
+      </ul>
+      <div class="glow-divider"></div>
+    </div>
+
+    <!-- Center Column: Main Content -->
+    <div class="main-content">
+      <h1>Geography Resources</h1>
+      <div class="glow-divider"></div>
+
+      <h2>📂 Resource Links</h2>
+      <ul>
+        <li><a href="resources/criteria-guide.html">Criteria A/B/C/D Guide</a></li>
+        <li><a href="resources/notes.html">Full Concept Notes</a></li>
+        <li><a href="resources/OPVL-guide.html">OPVL (Source Analysis) Guide</a></li>
+        <li><a href="resources/action-planner.html">Action Plan Template & Guide</a></li>
+      </ul>
+
+      <div class="glow-divider"></div>
+
+      <h2>📄 Past Paper Style Questions</h2>
+      <ul>
+        <li><a href="past papers/geopaper1.html">Practice Paper 1: Biomes & Disasters</a></li>
+        <li><a href="past papers/geopaper2.html">Practice Paper 2: Urban Planning & Migration</a></li>
+        <li><a href="past papers/geopaper3.html">Practice Paper 3: Resource Management & Climate</a></li>
+      </ul>
+
+      <p class="italic">Use these questions to practice Criterion A-D responses. Include diagrams or maps when needed.</p>
+    </div>
+
+    <!-- Right Column: Reserved or Optional -->
+    <div class="side-content">
+      <div class="glow-divider"></div>
+      <h2>General Resources</h2>
+      <ul>
+        <li><a href="resources/command-terms.html">IB Command Terms Explained</a></li>
+        <li><a href="resources/glossary.html">Glossary of Key Geography Terms</a></li>
+        <li><a href="resources/gis.html">GIS Tools & Examples</a></li>
+        <li><a href="resources/writeups.html">Model Answer Structures</a></li>
+      </ul>
+      <div class="glow-divider"></div>
+    </div>
+  </div>
+</body>
+</html>

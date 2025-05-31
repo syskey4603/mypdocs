@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Design ePortfolio – MypDocs</title>
+  <meta name="description" content="MYP5 Design ePortfolio Resources">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-color: #1c1c1c;
+      color: #eeeeee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 40px 0;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #b191ff;
+      background-color: transparent;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+    }
+
+    .back-button:hover {
+      background-color: rgba(177, 145, 255, 0.1);
+    }
+
+    .vertical-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, transparent, #b191ff, transparent);
+      box-shadow: 0 0 8px #b191ff88;
+      z-index: 0;
+    }
+
+    .line-left {
+      left: calc(50% - 340px);
+    }
+
+    .line-right {
+      right: calc(50% - 340px);
+    }
+
+    .main-content {
+      width: 600px;
+      z-index: 1;
+      padding: 0 20px;
+    }
+
+    .side-content {
+      width: 260px;
+      padding: 0 20px;
+      z-index: 0;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #e0d4ff;
+      text-shadow: 0 0 10px #b191ff;
+      margin-bottom: 30px;
+    }
+
+    .side-content h2 {
+      text-align: center;
+      color: #e0d4ff;
+      text-shadow: 0 0 10px #b191ff;
+      margin-top: 0;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #b191ff;
+      text-decoration: none;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 8px #b191ff;
+    }
+
+    .italic {
+      font-style: italic;
+      color: #ff7070;
+      text-align: center;
+      margin: 20px 0 20px;
+      font-weight: bold;
+    }
+
+    .glow-divider {
+      height: 2px;
+      width: 100%;
+      margin: 30px auto;
+      background: linear-gradient(to right, transparent, #b191ff, transparent);
+      border-radius: 4px;
+      box-shadow: 0 0 6px #b191ff;
+    }
+
+    .layout-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      gap: 20px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .spinning-image {
+        width: 600px;
+        animation: spin 14s linear infinite;
+        filter: drop-shadow(0 0 12px #b191ff);
+        border-radius: 50%;
+        margin-top: 20px;
+        user-select: none;          /* Prevents text selection */
+        -webkit-user-drag: none;    /* Prevents image dragging in Safari/Chrome */
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+
+
+
+    @media screen and (max-width: 1000px) {
+      body {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .layout-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .vertical-line {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="../index.html" class="back-button">&#8592; Back</a>
+  <div class="vertical-line line-left"></div>
+  <div class="vertical-line line-right"></div>
+
+  <div class="layout-wrapper">
+
+    <!-- Left: Tips -->
+    <div class="side-content">
+      <div class="glow-divider"></div>
+      <h2>Tips</h2>
+      <ul>
+        <li><strong>Design Cycle:</strong> Show all stages: Inquiring, Developing Ideas, Creating Solution, Evaluating.</li>
+        <li><strong>Use Real Evidence:</strong> Screenshots, sketches, feedback, test results.</li>
+        <li><strong>Justify Tools:</strong> Explain why you chose specific software, materials, or techniques.</li>
+        <li><strong>Highlight Iteration:</strong> Reflect improvements through drafts, versions, or retests.</li>
+        <li><strong>Link ATL skills:</strong> Mention how you planned, collaborated, or solved problems creatively.</li>
+      </ul>
+      <div class="glow-divider"></div>
+    </div>
+
+    <!-- Center: Main Content -->
+    <div class="main-content">
+      <h1>Design ePortfolio</h1>
+      <div class="glow-divider"></div>
+
+      <h2>🧩 Exemplar Portfolios</h2>
+      <ul>
+        <li><a href="exemplars/exemplar1.html">Exemplar 1 – sm diverse communication culture app or website</a></li>
+        <li><a href="exemplars/exemplar2.html">Exemplar 2 – sm game for kids</a></li>
+        <li><a href="exemplars/exemplar3.html">Exemplar 3 – sm social sustainability thing</a></li>
+        <li><a href="exemplars/exemplar4.html">Exemplar 4 – a really good portfolio on sm online website for myp kids</a></li>
+      </ul>
+
+      <p class="italic">Each exemplar highlights one or more key parts of the design cycle with commentary.</p>
+
+      <div style="text-align:center;">
+        <img src="design-cycle.png" alt="Design Cycle" class="spinning-image">
+    </div>
+
+    </div>
+
+    <!-- Right: General Resources -->
+    <div class="side-content">
+      <div class="glow-divider"></div>
+      <h2>General Resources</h2>
+      <ul>
+        <li><a href="Design Cycle Guide.html">Design Cycle Guide</a></li>
+        <li><a href="Criterion Guide.html">Criterion A/B/C/D Rubric</a></li>
+        <li><a href="design subject brief.html">IB design subject brief</a></li>
+        <li><a href="exemplar appendix.html">exemplar appendix</a></li>
+      </ul>
+      <div class="glow-divider"></div>
+    </div>
+
+  </div>
+</body>
+</html>
