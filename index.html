@@ -3,9 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>MypDocs</title>
-  <meta name="description" content="Subject Links">
+
+  <!-- Title & Favicon -->
+  <title>MypDocs – MYP5 Resources & Notes</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <!-- Basic Meta Info -->
+  <meta name="description" content="Find MYP5 resources, notes, past papers, and guides for subjects like Physics, Chemistry, Maths, History, and more. Built for MYP students.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="myp resources, myp5 notes, myp past papers, myp eassessment, IB MYP, myp exam help, myp physics, myp math, myp revision, myp ibdocs alternative">
+
+  <!-- Open Graph Meta (for social sharing) -->
+  <meta property="og:title" content="MypDocs – MYP5 Resources & Past Papers">
+  <meta property="og:description" content="Access full MYP5 resources including notes, past papers, guides, and exam tips for all subjects.">
+  <meta property="og:image" content="https://mypdocs.vercel.app/favicon.png">
+  <meta property="og:url" content="https://mypdocs.vercel.app">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MypDocs – MYP5 Revision Notes & Guides">
+  <meta name="twitter:description" content="Download MYP notes, exam papers, worksheets, and more – all in one place.">
+  <meta name="twitter:image" content="https://mypdocs.vercel.app/favicon.png">
+
   <style>
     body {
       background-color: #1c1c1c;
@@ -135,9 +155,42 @@
         display: none;
       }
     }
+
+    /* --- Loading animation --- */
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #0b0b0b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 1s ease;
+    }
+
+    #loading-text {
+      font-size: 48px;
+      font-weight: bold;
+      color: #b191ff;
+      text-shadow: 0 0 12px #b191ff88;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.2; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.08); }
+      100% { opacity: 0.2; transform: scale(1); }
+    }
+
   </style>
 </head>
 <body>
+  <div id="loading-screen">
+    <div id="loading-text">MypDocs</div>
+  </div>
 
   <!-- Glowing vertical lines framing the main content -->
   <div class="vertical-line line-left"></div>
@@ -217,5 +270,18 @@
     </div>
     
   </div>
+<script>
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      const loader = document.getElementById("loading-screen");
+      loader.style.opacity = "0";
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 1000); // fade out duration
+    }, 3000); // minimum 3 seconds shown
+  });
+</script>
+
+
 </body>
 </html>
